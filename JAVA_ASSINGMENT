@@ -1,0 +1,57 @@
+package project_1;
+import java.util.Scanner;
+public class Assignment 
+{
+	public static void main(String[] args) 
+	{
+		Scanner as = new Scanner(System.in);
+		int ch;
+		System.out.println();
+		do
+		{
+			System.out.println("1.Assignment 1\n2.Assignment 2\n2.Assignment 2\n3.Assignment 3\n3.Assignment 3\n4.Assignment 4\n5.Assignment 5\n6.Assignment 6\n7.Assignment 7\n8.Assignment 8\n0.Exit");
+			ch=as.nextInt();
+			
+			switch(ch)
+			{
+			case 1:
+				float r,p;
+				System.out.println("Enter rupees : ");
+				r=as.nextFloat();
+				p=r*100;
+				System.out.println("In paise : "+p);
+				break;
+			case 2:
+				int e;
+				System.out.println("Enter number :");
+				e=as.nextInt();
+				if(e%2==0)
+					System.out.println("Number is an even ");
+				else
+					System.out.println("Number is an odd ");
+				break;
+			case 3:
+				int l;
+				System.out.println("Enter year ");
+				l=as.nextInt();
+				if(l%4==0 && l%100!=0)
+				{
+					if(l%100!=0)
+						System.out.println("Year is an leap year ");
+					else
+						System.out.println("Year is an leap year ");
+				}
+				else if(l%400==0)
+					System.out.println("Year is an leap year ");
+				else
+					System.out.println("Year is not an leap year ");
+				break;
+			case 4:
+				
+			}
+			
+			
+			
+		}while(ch!=0);
+	}
+}
