@@ -222,5 +222,110 @@ public class Partten
 			space=space+2;
 			star--;
 		}
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		for(int r=1 ; r<=4 ;r++)
+		{
+			for(int c=1 ; c<=4 ;c++ )
+			{
+				if(r==1 || r==4 || c==1 || c==4)
+				{
+					System.out.print("*  ");
+				}
+				else
+				{
+					System.out.print("   ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		int px=5,py=5,row=5;
+		for(int r=1 ; r<=5 ; r++)
+		{
+			for(int c=1 ; c<=9 ; c++)
+			{
+				if(r==row || px == c || py ==c )
+				{
+					System.out.print("* ");
+				}
+				else
+					System.out.print("  ");
+			}
+			px--;
+			py++;
+			System.out.println();
+		}
+		System.out.println();
+		px=1;py=9;row=5;
+		for(int r=1 ; r<=5 ; r++)
+		{
+			for(int c=1 ; c<=9 ; c++)
+			{
+				if(px == c || py ==c )
+				{
+					System.out.print("* ");
+				}
+				else
+					System.out.print("  ");
+			}
+			px++;
+			py--;
+			System.out.println();
+		}
+		px=4;py=6;row=5;
+		for(int r=1 ; r<=4 ; r++)
+		{
+			for(int c=1 ; c<=9 ; c++)
+			{
+				if(px == c || py ==c )
+				{
+					System.out.print("* ");
+				}
+				else
+					System.out.print("  ");
+			}
+			px--;
+			py++;
+			System.out.println();
+		}
+		System.out.println();
+		 px=1;py=9;row=5;
+		for(int r=5 ; r>=1 ; r--)
+		{
+			for(int c=1 ; c<=9 ; c++)
+			{
+				if(r==row || px == c || py ==c )
+				{
+					System.out.print("* ");
+				}
+				else
+					System.out.print("  ");
+			}
+			px++;
+			py--;
+			System.out.println();
+		}
+		px=4;py=6;row=4;
+		for(int r = 1 ; r <=4 ; r++)
+		{
+			for(int c = 1 ; c<=9 ; c++)
+			{
+				if(row==r || px==c||py==c)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			px--;
+			py++;
+			System.out.println();
+		}
 	}
 }
