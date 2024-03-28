@@ -1,0 +1,161 @@
+//package---name should be in lower case
+//class member--helloWord(camel case-first word small and next word upper case)
+import java.util.Scanner;//to take input from user
+class Hello//class name-Should be capital and for multi word start continuous in capital (pascal case)
+          //-class name should be same as file
+		 //pascal case - first word letter should be capital and next word should be captial
+{
+	public static/*(static-modifier-to avoid create object)*/ void main(String[] args)
+//<AccessSpecifier><Modifier><ReturnType><name(Arg)
+	//args(no keyword)-variable_name of array(Strings)
+	{
+		Scanner obj = new Scanner(System.in);
+		//System       -class
+		//out          -static data member of print stream class (variable) 
+		//println/print-method
+		System.out.println("I Love JAVA");
+		String name;
+		
+		float a = 1.1f;// conversion from double to float use f
+		long b=1234567890l;//define long for more than 9;
+		long c=12346789;
+		System.out.print("Enter name : ");
+		name=obj.nextLine();//because of String class - to include space nextLine()
+		System.out.print("Float :"+a+" Name : "+name+" long : "+b+" long without l : "+c);
+	}
+}
+
+
+class Input
+{
+	public static void main(String[] args)
+	{
+		System.out.println(args[0]);//another method for input
+		System.out.println(args[1]);
+		System.out.println(args[0]+args[1]);
+		int a = Integer.parseInt(args[0]);//to convert String into int use Integer.parseInt()
+		int b = Integer.parseInt(args[1]);
+		System.out.println(a+b);
+		int age = 21;
+		String result = age>18 ? "Adult" : "Child";//3 condition
+		System.out.println(result);
+
+		//premitive type cast
+		short a = 2;
+		int b = a;
+		System.out.println("smaller to large : "+b);
+
+		long c = 123456;
+		int d = (int)c;
+		System.out.println("large to small   : "+d);
+	}
+}
+
+
+
+{
+	public static void main(Integer[] args)//due to Integer[] args
+	//Error: Main method not found in class Input, please define the main method as:
+    //public static void main(String[] args)
+    //or a JavaFX application class must extend javafx.application.Application
+	{
+		System.out.println(args[0]);//another method for input
+		System.out.println(args[1]);
+		System.out.println(args[0]+args[1]);
+		//int a = Integer.parseInt(args[0]);//to convert String into int use Integer.parseInt()
+		//int b = Integer.parseInt(args[1]);
+
+		//System.out.println(a+b);
+	}
+}
+
+
+import java.util.Scanner;
+class Charr
+{
+	public static void main(String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter : ");
+		char ch = obj.next().charAt(0);
+		System.out.println(+ch);//print char's ascil value
+		System.out.println(ch);//print char
+	}
+}
+
+
+
+
+
+///with return function
+
+class Men
+{
+	int b;
+	public static int square(int a)
+	{
+		return a*a;
+	}
+	public static void main(String[] args) 
+	{
+		int a=10;
+		int square = square(a);
+		System.out.println(square);
+	}
+}
+
+
+
+
+import java.util.Scanner;
+class Men
+{
+	int b;
+	public static int square(int a)
+	{
+		return a*a;
+	}
+
+	//with return function
+
+	public static void main(String[] args) 
+	{
+		/*
+		int a=10;
+		int b=20;
+		int square = square(a);
+		System.out.println(square);
+		square = square(b);
+		System.out.println(square);
+		for(int i = 0 ; i <=50 ; i++)
+		{
+			square=square(i);
+			System.out.println("square of "+i+" is "+square);
+		}
+		*/
+		Scanner obj = new Scanner(System.in);
+		int a;
+		/*int n;
+
+		System.out.println("enter number : ");
+		a=obj.nextInt();
+		for(int i = 0 ; i <100 ; i++)
+		{
+			n=a%10;
+			a=a/10;
+			System.out.print(n);
+			if(a==0)
+				break;
+		}
+		*/
+		System.out.println("enter number : ");
+		a=obj.nextInt();
+		int n=0;
+		while(a!=0)
+		{
+			n=n*10+a%10;
+			a=a/10;
+		}
+		System.out.println(n);
+	}
+}
